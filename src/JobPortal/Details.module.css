@@ -212,6 +212,12 @@
   letter-spacing: 0.24px;
   color: #333;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 20px;
 }
 
@@ -315,7 +321,7 @@
        object-fit: contain;
   }
   .fluid .container .imgContainer .back {
-    top: 0;
+    top: 20px;
   }
   .fluid .container .contentBox {
     display: -webkit-box;
@@ -330,7 +336,7 @@
   .fluid .container .toolsContainer .toolBox {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 12px;
+    padding: 0 15px;
   }
   .fluid .container .toolsContainer .toolBox .tool {
     margin-top: 10px;
@@ -341,7 +347,7 @@
   .fluid .container .languagesContainer .languageBox {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 12px;
+    padding: 0 15px;
   }
   .fluid .container .languagesContainer .languageBox .language {
     margin-top: 10px;
