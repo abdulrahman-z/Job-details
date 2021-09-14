@@ -16,10 +16,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fluid .container .imgContainer {
-  max-width: 936px;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,16 +238,16 @@
 }
 
 .fluid .container .languagesContainer .languageBox {
-  padding-top: 36px;
+  margin-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .fluid .container .languagesContainer .languageBox .language {
@@ -264,16 +270,16 @@
 }
 
 .fluid .container .toolsContainer .toolBox {
-  padding-top: 30px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .fluid .container .toolsContainer .toolBox .tool {
@@ -298,5 +304,47 @@
   font-size: 14px;
   letter-spacing: 0.7px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .fluid .container {
+    width: 100%;
+  }
+  .fluid .container .imgContainer .workspace {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .fluid .container .imgContainer .back {
+    top: 0;
+  }
+  .fluid .container .contentBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fluid .container .contentBox .box {
+    margin-top: 30px;
+  }
+  .fluid .container .toolsContainer .toolBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 12px;
+  }
+  .fluid .container .toolsContainer .toolBox .tool {
+    margin-top: 10px;
+  }
+  .fluid .container .languagesContainer .languageHeading {
+    font-size: 18px;
+  }
+  .fluid .container .languagesContainer .languageBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 12px;
+  }
+  .fluid .container .languagesContainer .languageBox .language {
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=Details.module.css.map */

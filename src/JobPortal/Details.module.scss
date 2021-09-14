@@ -7,11 +7,13 @@
         width: 936px;
         margin: 0 auto;
         border-radius: 10px;
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         .imgContainer{
-         
-            max-width: 936px;
+            width: 100%;
+       
             position: relative;
             display: flex;
             align-items: center;
@@ -180,10 +182,10 @@
                 color:#000;
                 }
                 .languageBox{
-                    padding-top: 36px;
+                    margin-top: 36px;
                     display: flex;
                     align-items: flex-start;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     
                     .language{
                         background-color: #f3f7f9;
@@ -200,14 +202,15 @@
             margin-top: 40px;
             width: 100%;
             .toolsHeading{
+          
                 font-size: 20px;
                 color:#000;
                 }
                 .toolBox{
-                    padding-top: 30px;
+                    margin-top: 30px;
                     display: flex;
                     align-items: flex-start;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     
                     .tool{
                         background-color: #f3f7f9;
@@ -237,3 +240,58 @@
      
     }
 }
+
+
+@media screen and(max-width:768px) {
+
+    .fluid{
+      
+        .container{
+            width: 100%;
+            .imgContainer{
+                .workspace{
+                    object-fit: contain;
+                }
+                .back{
+                    top: 0;
+                }
+            }
+           
+            .contentBox{
+                display: flex;
+                flex-wrap: wrap;
+                .box{
+                    margin-top: 30px;
+                    
+                }
+            }
+
+
+            .toolsContainer{
+                .toolBox{
+                    flex-wrap: wrap;
+                    padding: 0 12px;
+                    .tool{
+                        margin-top:10px;
+                    }
+                }
+            }
+
+            .languagesContainer{
+                .languageHeading{
+                    font-size: 18px;
+                }
+                .languageBox{
+                    flex-wrap: wrap;
+                    padding: 0 12px;
+                    .language{
+                        margin-top:10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+

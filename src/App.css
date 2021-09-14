@@ -48,4 +48,5 @@
 body{
   background-color: #f3f7f9;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
