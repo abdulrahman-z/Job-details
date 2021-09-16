@@ -9,53 +9,32 @@
   width: 936px;
   margin: 0 auto;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .fluid .container .imgContainer {
-  width: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 52px;
 }
 
 .fluid .container .imgContainer .workspace {
   width: 100%;
-  height: 320px;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .fluid .container .imgContainer .back {
   height: 40px;
   width: 40px;
-  background-color: #0000ff;
+  background-color: #fff;
   border-radius: 27px;
   position: absolute;
   top: 57px;
-  left: 5.6%;
+  left: 52px;
   cursor: pointer;
 }
 
 .fluid .container .imgContainer .back .arrow {
   padding: 10px;
-  color: #fff;
+  color: #333;
   font-size: 20px;
 }
 
@@ -77,18 +56,17 @@
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  position: absolute;
-  top: 256px;
+  position: relative;
+  margin-top: -100px;
 }
 
 .fluid .container .imgContainer .logo .snapchat {
   position: absolute;
-  height: 53px;
-  width: 60px;
+  height: auto;
+  width: 70%;
 }
 
 .fluid .container .contentsContainer {
-  max-width: 936px;
   padding: 0 52px;
   margin-top: 20px;
   display: -webkit-box;
@@ -98,18 +76,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
-.fluid .container .contentsContainer .mainTitle {
-  padding-top: 20px;
+.fluid .container .contentsContainer .titleContainer .mainTitle {
   font-size: 24px;
   color: #000;
 }
 
-.fluid .container .contentsContainer .address {
+.fluid .container .contentsContainer .titleContainer .address {
   font-size: 14px;
   color: #000;
   padding-top: 17px;
@@ -117,41 +91,23 @@
 
 .fluid .container .contentsContainer .contentBox {
   padding-top: 42px;
-  padding-left: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 936px;
-  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .fluid .container .contentsContainer .contentBox .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 24px;
+  margin-right: 17px;
   width: 259px;
   height: 100px;
-  padding: 18px 0 22px 24px;
   border-radius: 8px;
   background-color: #f3f7f9;
+  padding: 18px 0 22px 24px;
 }
 
 .fluid .container .contentsContainer .contentBox .box .role {
-  margin-top: 18px;
+  padding-top: 18px;
+  padding-bottom: 12px;
   color: #828282;
   line-height: 1.61px;
   font-weight: 500;
@@ -167,7 +123,6 @@
 }
 
 .fluid .container .overviewContainer {
-  max-width: 936px;
   margin-top: 60px;
 }
 
@@ -187,10 +142,6 @@
   color: #333;
   font-size: 16px;
   color: #333;
-}
-
-.fluid .container .descriptionContainer {
-  max-width: 936px;
 }
 
 .fluid .container .descriptionContainer .descriptionTitle {
@@ -235,7 +186,6 @@
 
 .fluid .container .languagesContainer {
   margin-top: 40px;
-  width: 100%;
 }
 
 .fluid .container .languagesContainer .languageHeading {
@@ -245,15 +195,6 @@
 
 .fluid .container .languagesContainer .languageBox {
   margin-top: 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .fluid .container .languagesContainer .languageBox .language {
@@ -263,11 +204,11 @@
   font-size: 14px;
   color: #5da5a4;
   border: 0;
+  margin-right: 12px;
 }
 
 .fluid .container .toolsContainer {
   margin-top: 40px;
-  width: 100%;
 }
 
 .fluid .container .toolsContainer .toolsHeading {
@@ -277,15 +218,6 @@
 
 .fluid .container .toolsContainer .toolBox {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .fluid .container .toolsContainer .toolBox .tool {
@@ -295,11 +227,11 @@
   font-size: 14px;
   color: #5da5a4;
   border: 0;
+  margin-right: 12px;
 }
 
 .fluid .container .applyBtn {
   max-width: 824px;
-  width: 100%;
   margin-top: 74px;
   padding: 21px 0;
   border-radius: 8px;
@@ -313,33 +245,47 @@
 }
 
 @media screen and (max-width: 768px) {
+  .fluid {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .fluid .container {
     width: 100%;
   }
   .fluid .container .imgContainer .workspace {
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 100%;
+    height: auto;
+    min-height: 220px;
+  }
+  .fluid .container .imgContainer .logo {
+    margin-top: -65px;
+    margin-left: 24px;
+    width: 110px;
+    height: 110px;
   }
   .fluid .container .imgContainer .back {
-    top: 20px;
+    top: 12px;
+    left: 36px;
   }
-  .fluid .container .contentBox {
+  .fluid .container .contentsContainer {
+    padding: 0 24px;
+  }
+  .fluid .container .contentsContainer .contentBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .fluid .container .contentBox .box {
+  .fluid .container .contentsContainer .contentBox .box {
     margin-top: 30px;
   }
   .fluid .container .toolsContainer .toolBox {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 15px;
   }
   .fluid .container .toolsContainer .toolBox .tool {
-    margin-top: 10px;
+    margin-top: 12px;
   }
   .fluid .container .languagesContainer .languageHeading {
     font-size: 18px;
@@ -347,10 +293,9 @@
   .fluid .container .languagesContainer .languageBox {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 15px;
   }
   .fluid .container .languagesContainer .languageBox .language {
-    margin-top: 10px;
+    margin-top: 12px;
   }
 }
 /*# sourceMappingURL=Details.module.css.map */
