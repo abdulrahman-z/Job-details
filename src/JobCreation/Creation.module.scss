@@ -165,6 +165,7 @@
             background-color: #fff;
             width: 824px;
             margin-top: 110px;
+            border-radius: 8px;
             .createBtn{
                 width: 100%;
                 cursor: pointer;
@@ -182,10 +183,10 @@
 }
 
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:768px) {
     
     .fluid{
-      padding: 0 15px;
+      padding: 0 10px;
       margin-top: 0;
         .mainContainer{
             padding: 20px 10px;

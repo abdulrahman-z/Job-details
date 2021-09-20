@@ -44,5 +44,8 @@
   .inputBox {
     width: 100%;
   }
+  .displayLanguages .lang {
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=Chips.module.css.map */
