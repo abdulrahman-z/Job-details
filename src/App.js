@@ -1,11 +1,13 @@
 
 import './App.css';
-import Details from './JobPortal/Details';
+import Creation from './JobCreation/Creation';
+//import Details from './JobPortal/Details';
 
 function App() {
   return (
     <div>
-     <Details />
+     {/* <Details /> */}
+     <Creation/>
     </div>
   );
 }

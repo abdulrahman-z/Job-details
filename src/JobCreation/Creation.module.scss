@@ -1,0 +1,234 @@
+.fluid{
+    background-color:#f2f2f2;
+    margin-top: 111px;
+ 
+   .mainContainer{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 936px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 57px 56px 52px 52px;
+        .pageHeadingContainer{
+            display:flex;
+            align-items: center;
+           
+            .iconBox{
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 27px;
+                cursor: pointer;
+                .backArrow{
+                    font-size: 30px;
+                }
+
+            }
+          
+           .mainHeading{
+               flex: 1;
+               padding-left: 70px;
+               font-size: 34px;
+               font-weight: bold;
+               line-height: 1.61;
+               letter-spacing: 0.51px;
+               color: #000;
+               padding-top: 8px;
+               padding-bottom: 7px;
+           }
+        }
+
+        .imageFileContainer{
+            padding-top: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            
+            .fileLabel{
+                height: 140px;
+                width: 140px;
+                background-color: #f2f2f2;
+                border-radius: 50%;
+                margin-left: 12px;
+                cursor: pointer;
+                position: relative;
+
+                .plus{
+                    position: absolute;
+                    transform: translate(55px,50px);
+                    font-size: 40px;
+                    
+                }
+            }
+            .fileInput{
+                display: none;
+            }
+        }
+
+        .companyContainer{
+            padding-top: 92px;
+            .companyTitle{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.61;
+                letter-spacing: 0.3px;
+                color: #000;
+            }
+            .companyForm{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+       
+            }
+        }
+
+        .jobSection{
+            margin-top: 70px;
+            .title{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.61;
+                letter-spacing: 0.3px;
+                color: #000;
+            }
+            .contentHolder{
+                margin-top: 45px;
+                max-width: 787px;
+                min-height: 424px;
+                border-radius: 8px;
+                border: solid 1px #e0e0e0;
+                background-color: #fff;
+                display: block;
+                    .iconSection{
+                    border-radius: 8px;
+                    border: solid 1px #e0e0e0;
+                    background-color: #f3f7f9;
+                    display: flex;
+                
+                    justify-content: space-between;
+                    padding: 22px 0 16px 32px;
+                    .font{
+                        display: inline-block;
+                   
+                        i{
+                            padding-right: 40px;
+                            font-size: 14px;
+                            font-weight: bold;
+                            line-height: 1.61;
+                            letter-spacing: 0.21px;
+                            color: #000;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .alignment{
+                  
+                       display: inline-block;
+                      
+                      
+                        i{
+                            font-size: 14px;
+                            font-weight: bold;
+                            line-height: 1.61;
+                            letter-spacing: 0.21px;
+                            color: #000;
+                            margin-right: 50px;
+                            cursor: pointer;
+                          
+                        }
+                    }
+                }
+
+                .text{
+                   border: none;
+                   outline: none;
+                    resize: none;
+                    width: 100%;
+                    min-height: 350px;
+                    padding: 10px 12px;
+                }
+                
+            }
+        }
+
+        .langSection{
+            margin-top: 40px;
+        }
+
+        .toolSection{
+            margin-top: 60px;
+        }
+
+        .create{
+            background-color: #fff;
+            width: 824px;
+            margin-top: 110px;
+            .createBtn{
+                width: 100%;
+                cursor: pointer;
+                padding: 21px 0;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: bold;
+                background-color: #5da5a4;
+                letter-spacing: 0.7px;
+                color: #fff;
+                border: none;
+            }
+        }
+   }
+}
+
+
+@media screen and (max-width:576px) {
+    
+    .fluid{
+      padding: 0 15px;
+      margin-top: 0;
+        .mainContainer{
+            padding: 20px 10px;
+            width: 100%;
+            .pageHeadingContainer{
+                .iconBox{
+                    .backArrow{
+                        font-size: 24px;
+                    }
+                }
+                .mainHeading{
+                    padding-left: 30px;
+                    font-size: 24px;
+                }
+            }
+
+         
+
+            .jobSection{
+            
+                .iconSection{
+                    flex-direction: column;
+                    
+                    
+                    .alignment{
+                        
+                        margin-top: 15px;
+                        i{
+                            padding-bottom: 20px;
+                        }
+                       
+                    }
+                }
+            }
+
+          
+            
+            .create{
+                 width: 100%;
+                position: sticky;
+                bottom: 0;
+                background-color: #fff;
+            }
+        }
+    }
+}

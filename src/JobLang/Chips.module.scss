@@ -1,0 +1,45 @@
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.61;
+    letter-spacing: 0.3px;
+    color: #000;
+}
+
+.inputBox{
+    margin-top: 24px;
+    border-radius: 8px;
+    border: solid 1px #e0e0e0;
+    background-color: #fff;
+    width: 787px;
+    height: 60px;
+    outline: none;
+}
+
+.displayLanguages{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    .lang{
+        margin-bottom: 36px;
+        padding: 12px;
+        border-radius: 12px;
+        background-color: #f3f7f9;
+        margin-right: 26px;
+        font-size: 14px;
+        color: #5da5a4;
+        span{
+            margin-left: 16px;
+            cursor: pointer;
+          
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .inputBox{
+        width: 100%;
+    }
+}

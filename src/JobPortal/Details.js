@@ -4,6 +4,9 @@ import workspace from '../Assets/workspace2.jpg'
 import snapchat from '../Assets/snap-final.png'
 
 function Details() {
+
+    const languages = ['HTML' , 'CSS' , 'Javascript' , 'JQuery' ,'Python' ,'Go' , 'Ruby'] ;
+    const tools = ['React' , 'vue.js','Bootstrap','Codepen','TailwindCss','Ruby','Go'];
     return (
         <div className={Styles.fluid}>
             <div className={Styles.container}>
@@ -79,14 +82,12 @@ function Details() {
                      <div className={Styles.languagesContainer}>
                             <h1 className={Styles.languageHeading}>Programming Languages</h1>
                             <div className={Styles.languageBox}>
+                                {
+                                    languages.map((el) => {
+                                        return (<button className={Styles.language}>{el}</button>)
+                                    })
+                                }
 
-                                <button className={Styles.language}>HTML</button>
-                                <button className={Styles.language}>CSS</button>
-                                <button className={Styles.language}>Javascript</button>
-                                <button className={Styles.language}>JQuery</button>
-                                <button className={Styles.language}>Python</button>
-                                <button className={Styles.language}>Go</button>
-                                <button className={Styles.language}>Ruby</button>
                         
                             </div>
                      </div>
@@ -94,13 +95,13 @@ function Details() {
                     <div className={Styles.toolsContainer}>
                         <h1 className={Styles.toolsHeading}>Tools</h1>
                         <div className={Styles.toolBox}>
-                        <button className={Styles.tool}>React</button>
-                        <button className={Styles.tool}>Vue.js</button>
-                        <button className={Styles.tool}>Bootstrap</button>
-                        <button className={Styles.tool}>TailwindCSS</button>
-                        <button className={Styles.tool}>Codepen</button>
-                        <button className={Styles.tool}>VS code</button>
-                        <button className={Styles.tool}>Version control</button>
+                            {
+                                tools.map(el => {
+                                    return <button className={Styles.tool}>{el}</button>   
+                                    
+                                })
+                            }
+                                  
                     </div>
 
                 </div>

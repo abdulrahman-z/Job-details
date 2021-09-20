@@ -1,0 +1,243 @@
+.fluid {
+  background-color: #f2f2f2;
+  margin-top: 111px;
+}
+
+.fluid .mainContainer {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 936px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 57px 56px 52px 52px;
+}
+
+.fluid .mainContainer .pageHeadingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fluid .mainContainer .pageHeadingContainer .iconBox {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 27px;
+  cursor: pointer;
+}
+
+.fluid .mainContainer .pageHeadingContainer .iconBox .backArrow {
+  font-size: 30px;
+}
+
+.fluid .mainContainer .pageHeadingContainer .mainHeading {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 70px;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.61;
+  letter-spacing: 0.51px;
+  color: #000;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+
+.fluid .mainContainer .imageFileContainer {
+  padding-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fluid .mainContainer .imageFileContainer .fileLabel {
+  height: 140px;
+  width: 140px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.fluid .mainContainer .imageFileContainer .fileLabel .plus {
+  position: absolute;
+  -webkit-transform: translate(55px, 50px);
+          transform: translate(55px, 50px);
+  font-size: 40px;
+}
+
+.fluid .mainContainer .imageFileContainer .fileInput {
+  display: none;
+}
+
+.fluid .mainContainer .companyContainer {
+  padding-top: 92px;
+}
+
+.fluid .mainContainer .companyContainer .companyTitle {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.61;
+  letter-spacing: 0.3px;
+  color: #000;
+}
+
+.fluid .mainContainer .companyContainer .companyForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fluid .mainContainer .jobSection {
+  margin-top: 70px;
+}
+
+.fluid .mainContainer .jobSection .title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.61;
+  letter-spacing: 0.3px;
+  color: #000;
+}
+
+.fluid .mainContainer .jobSection .contentHolder {
+  margin-top: 45px;
+  max-width: 787px;
+  min-height: 424px;
+  border-radius: 8px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+  display: block;
+}
+
+.fluid .mainContainer .jobSection .contentHolder .iconSection {
+  border-radius: 8px;
+  border: solid 1px #e0e0e0;
+  background-color: #f3f7f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 0 16px 32px;
+}
+
+.fluid .mainContainer .jobSection .contentHolder .iconSection .font {
+  display: inline-block;
+}
+
+.fluid .mainContainer .jobSection .contentHolder .iconSection .font i {
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.61;
+  letter-spacing: 0.21px;
+  color: #000;
+  cursor: pointer;
+}
+
+.fluid .mainContainer .jobSection .contentHolder .iconSection .alignment {
+  display: inline-block;
+}
+
+.fluid .mainContainer .jobSection .contentHolder .iconSection .alignment i {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.61;
+  letter-spacing: 0.21px;
+  color: #000;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.fluid .mainContainer .jobSection .contentHolder .text {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  min-height: 350px;
+  padding: 10px 12px;
+}
+
+.fluid .mainContainer .langSection {
+  margin-top: 40px;
+}
+
+.fluid .mainContainer .toolSection {
+  margin-top: 60px;
+}
+
+.fluid .mainContainer .create {
+  background-color: #fff;
+  width: 824px;
+  margin-top: 110px;
+}
+
+.fluid .mainContainer .create .createBtn {
+  width: 100%;
+  cursor: pointer;
+  padding: 21px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #5da5a4;
+  letter-spacing: 0.7px;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  .fluid {
+    padding: 0 15px;
+    margin-top: 0;
+  }
+  .fluid .mainContainer {
+    padding: 20px 10px;
+    width: 100%;
+  }
+  .fluid .mainContainer .pageHeadingContainer .iconBox .backArrow {
+    font-size: 24px;
+  }
+  .fluid .mainContainer .pageHeadingContainer .mainHeading {
+    padding-left: 30px;
+    font-size: 24px;
+  }
+  .fluid .mainContainer .jobSection .iconSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fluid .mainContainer .jobSection .iconSection .alignment {
+    margin-top: 15px;
+  }
+  .fluid .mainContainer .jobSection .iconSection .alignment i {
+    padding-bottom: 20px;
+  }
+  .fluid .mainContainer .create {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+  }
+}
+/*# sourceMappingURL=Creation.module.css.map */
